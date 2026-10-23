@@ -1,0 +1,317 @@
+{
+  "count": 39,
+  "skills": [
+    {
+      "name": "attendance-and-scorecard",
+      "description": "Sets up check-ins as a run club's source of truth for attendance and produces an honest weekly scorecard (unique runners, total visits, first-timers, two-week return rate, drifters, milestones) from a check-in export using a deterministic script. Use for \"how many people came\", \"weekly numbers\", \"set up check-ins\", \"what's our retention\", \"Monday brief\", or reconciling Strava, RSVPs, and real attendance.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/attendance-and-scorecard/SKILL.md",
+      "sha": "5aff833849aa20a88f871e6cc055960e9038c3fd",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/attendance-and-scorecard/SKILL.md"
+    },
+    {
+      "name": "bring-a-friend",
+      "description": "Builds member-led growth into a run club with a monthly bring-your-crew run, a short-route option for invited friends, copy-paste invite messages members can send, public thanks for people who bring others, and simple attribution of who brought whom. Use for \"grow through word of mouth\", \"plan a bring-a-friend run\", \"write the invite text members can send\", or \"who's bringing new people\".",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/bring-a-friend/SKILL.md",
+      "sha": "f1ca9ea77b5efe0dcaeee325c05c7ba204377550",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/bring-a-friend/SKILL.md"
+    },
+    {
+      "name": "buddy-system",
+      "description": "Builds and runs a run club buddy pool of regulars who run with first-timers, covering who qualifies, how to ask them, the one-page buddy brief, weekly pairing of newcomers with the right buddy, recognition, and pool-health alerts when expected first-timers outnumber buddies. Use for \"set up buddies\", \"pair this week's newcomers\", \"who should we ask to be a buddy\", or \"write the buddy brief\".",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/buddy-system/SKILL.md",
+      "sha": "bca75743e4fd72f809b4797ab4a1a9b684166a8b",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/buddy-system/SKILL.md"
+    },
+    {
+      "name": "captains-and-succession",
+      "description": "Removes the founder as a run club's single point of failure by identifying backup captains, defining role cards (lead, greeter, buddy, sweep, check-in, recap), rotating duties, handing off with a checklist, and setting a weekly founder time budget. Use for \"I can't run this alone\", \"who should be a captain\", \"make a captain playbook\", \"I'm traveling next week\", or founder burnout.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/captains-and-succession/SKILL.md",
+      "sha": "0d9184f2b007335808bafe9a83b378f40ad3526e",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/captains-and-succession/SKILL.md"
+    },
+    {
+      "name": "drifter-save",
+      "description": "Reaches run club members who stopped showing up by diagnosing the likely reason (schedule, injury or health, life event, lost connection, quiet quit), choosing the right play and the right sender, writing a short personal message with no guilt and no ask, and releasing people gracefully when they've moved on. Use for \"who's missing\", \"write a we-miss-you message\", \"lapsed members\", \"win back regulars\", or a drift audit.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/drifter-save/SKILL.md",
+      "sha": "560f392b79e32ae019fee77093a2fd3659b2396d",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/drifter-save/SKILL.md"
+    },
+    {
+      "name": "founding-ritual",
+      "description": "Locks a run club's non-negotiable weekly ritual (day, time, meeting spot, routes, post-run hang, frequency), writes the one-sentence promise, audits drift, and handles weather cancellations with a written safety plan and a recovery message. Use for \"set our weekly run\", \"pick a meeting spot\", \"should we cancel for weather\", \"our turnout is inconsistent\", or a ritual health check.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/founding-ritual/SKILL.md",
+      "sha": "65c5cb5e8b884498007114e46cfb0545078b9d9b",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/founding-ritual/SKILL.md"
+    },
+    {
+      "name": "local-partners",
+      "description": "Finds and works with local partners that make a run club better (post-run coffee spot, run specialty store, gyms, physical therapists, local brands), with a fit test, a specific useful ask, a small partner menu, honest club numbers, and a simple recap. Use for \"find a coffee shop partner\", \"pitch the run store\", \"how do we get sponsors for a free club\", or \"what can we offer a local business\".",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/local-partners/SKILL.md",
+      "sha": "91cd6e421025791cd767ff103b813904e6dc45fb",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/local-partners/SKILL.md"
+    },
+    {
+      "name": "member-lifecycle",
+      "description": "Classifies every named run club participant into a lifecycle state (Prospect, First-Timer, Regular, Bringer, Anchor, Drifter, Paused, Released) from check-ins and known signals, detects weekly transitions, and outputs one named action per person for the week. Use for \"who should I message this week\", \"member states\", \"run the growth loop\", \"turn regulars into bringers\", or a weekly people review.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/member-lifecycle/SKILL.md",
+      "sha": "66d9f0bba090dda89f727e63a36a27df71323469",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/member-lifecycle/SKILL.md"
+    },
+    {
+      "name": "milestones-and-streaks",
+      "description": "Designs run club recognition for showing up, including milestone tiers (5, 10, 25, 50, 100 runs), what counts (walking, buddying, sweeping), how missed weeks are handled without erasing progress, private personal counts with aggregate public totals, and the recognition message or post. Use for \"milestone club\", \"streaks\", \"recognize regulars\", \"who hits 10 this week\", or \"design a reward for consistency\".",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/milestones-and-streaks/SKILL.md",
+      "sha": "797aaecc3d2d53252a14d536675ddc09ae69b5ef",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/milestones-and-streaks/SKILL.md"
+    },
+    {
+      "name": "newcomer-welcome",
+      "description": "Designs and runs the first-timer experience for a run club, from the 15-second greeting, buddy assignment, and name in the pre-run circle to the hang and the personalized 24-hour, day 3, and day before second run follow-ups, plus a monthly newcomer retention audit. Use for \"first-timers aren't coming back\", \"write the welcome script\", \"draft follow-ups for this week's new people\", or onboarding a new greeter.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/newcomer-welcome/SKILL.md",
+      "sha": "7879ec18e70f345623983d90c18e4e2cdfb07392",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/newcomer-welcome/SKILL.md"
+    },
+    {
+      "name": "routes-and-safety",
+      "description": "Designs no-drop run club routes and group logistics (out-and-back or loop routes, distance options, pace groups, sweeps, crossings), written weather thresholds (lightning, heat, cold, ice, air quality), dark-hours safety, waivers, insurance, and when a free group run needs a permit. Use for \"design our routes\", \"nobody should get dropped\", \"should we run in this weather\", \"do we need insurance or a permit\", or \"night run safety\". Not legal, medical, or insurance advice.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/routes-and-safety/SKILL.md",
+      "sha": "ff40055439ded3ff822f9f99e4ad56d39b438cbc",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/routes-and-safety/SKILL.md"
+    },
+    {
+      "name": "run-club-operator",
+      "description": "Runs a run club week to week by finding the main constraint (not enough first-timers, first-timers not returning, regulars drifting, founder burnout, unsafe or unclear logistics) and routing to the right run club skill. Use for \"what should I focus on this week\", \"how do I grow my run club\", \"Monday plan\", \"our club is stuck\", or any broad run club operations question.",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/run-club-operator/SKILL.md",
+      "sha": "30f8eaecdab7cf06c8c2e111a5fb49c261ea5142",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/run-club-operator/SKILL.md"
+    },
+    {
+      "name": "run-reports-and-stories",
+      "description": "Writes run club weekly recaps and member stories that use verified check-in numbers, real moments, and explicit consent for names, photos, and quotes, with a clear next step. Use for \"write this week's recap\", \"run report\", \"member spotlight\", \"post about Saturday\", or \"turn a member interview into posts\".",
+      "repo": "nickmerich/run-club-skills",
+      "path": "skills/run-reports-and-stories/SKILL.md",
+      "sha": "80a0ab7cf11064229c15cfbe08374b581d4194eb",
+      "url": "https://github.com/nickmerich/run-club-skills/blob/main/skills/run-reports-and-stories/SKILL.md"
+    },
+    {
+      "name": "artist-partnerships",
+      "description": "Structures partnerships between music tech products and artists, including signature presets or packs, artist-in-residence, release tie-ins, content collaborations, compensation models, name and likeness approvals, organic versus paid usage boundaries, sync and sample rights, and endorsement disclosure. Use for \"partner with [artist]\", \"signature preset pack\", \"can we run their video as an ad\", \"artist deal terms\", or \"release campaign with our product\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/artist-partnerships/SKILL.md",
+      "sha": "473cebfcfdc553683b698cf8d512254455629b3a",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/artist-partnerships/SKILL.md"
+    },
+    {
+      "name": "attribution-and-measurement",
+      "description": "Sets up and audits measurement for music tech growth, including UTM conventions, tracked links vs discount codes and which wins, affiliate platform reports, refunds and chargebacks, trial-to-paid, mobile and app-store gaps, and a weekly funnel and partner report from order and partner exports using a script. Use for \"where are sales coming from\", \"is the affiliate tracking working\", \"weekly growth report\", \"set up UTMs\", or \"reconcile partner sales\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/attribution-and-measurement/SKILL.md",
+      "sha": "fc06d6eefe9ca8699cbfd9a5bbf21d72aa3fc041",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/attribution-and-measurement/SKILL.md"
+    },
+    {
+      "name": "community-and-workshops",
+      "description": "Builds community and retention for a music tech product through live workshops and first-use sessions, a focused Discord or forum, beat, remix, or preset challenges with clear official rules, user showcases with consent, and lifecycle touches that lead to second sessions, upgrades, and reviews. Use for \"run a workshop\", \"start a Discord\", \"remix contest rules\", \"how do we keep users\", or \"get more reviews\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/community-and-workshops/SKILL.md",
+      "sha": "7c8a053d3a32102d2dd93cdbd0d39f9d0bbd63c0",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/community-and-workshops/SKILL.md"
+    },
+    {
+      "name": "creator-activation-ladder",
+      "description": "Runs the first 90 days for approved music tech creator partners with one next action per touch, covering day 0 welcome, day 1 license and first DAW use, day 3 copy-paste post, day 7 easier format and a call, first-post thanks, second-sale recognition, day 60 reactivation, and day 90 review, plus a weekly check from sales data. Use for \"activate new partners\", \"who hasn't posted\", \"weekly partner check-in\", or \"draft the welcome\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/creator-activation-ladder/SKILL.md",
+      "sha": "3c11eb8480f897b4403889e378b19e7323ae1a8d",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/creator-activation-ladder/SKILL.md"
+    },
+    {
+      "name": "creator-partner-program",
+      "description": "Designs or audits a creator affiliate, referral, or ambassador program for a music tech product across six layers (economics, attribution, recruiting, activation, enablement, recognition), computes a commission ceiling from margins, and writes changes as proposals with every affected surface listed. Use for \"audit our affiliate program\", \"how much commission should we pay\", \"design creator tiers\", \"attribution window\", or \"why don't our partners sell\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/creator-partner-program/SKILL.md",
+      "sha": "a5675169e1af4b5f2cfd52d0f7d3ce1c178c92bf",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/creator-partner-program/SKILL.md"
+    },
+    {
+      "name": "creator-recruiting",
+      "description": "Recruits creator partners for a music tech product by sourcing from existing customers, competitor reviewers, niche producers, and educators, scoring fit, running 30 to 40 personalized sends a day from a prospect tracker, and logging every state change. Use for \"find more creators\", \"who should we pitch next\", \"run today's outreach\", \"score these YouTubers\", or building a prospect list. Drafts only; a human approves sends.",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/creator-recruiting/SKILL.md",
+      "sha": "02c335a893bd3eff3abb2796261a413c8e5c4c83",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/creator-recruiting/SKILL.md"
+    },
+    {
+      "name": "demo-and-content-engine",
+      "description": "Builds a content engine for a music tech product around honest audio demos (before/after, dry/wet, settings disclosed), DAW-specific tutorials, short-form hooks that work sound-on, creator remixable presets or projects, and a weekly cadence one person can sustain. Use for \"make demo content\", \"what should we post\", \"write hooks for this plugin\", \"tutorial plan\", or \"content calendar for our app\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/demo-and-content-engine/SKILL.md",
+      "sha": "af54c44183db3bb570e5434c0763560294020a07",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/demo-and-content-engine/SKILL.md"
+    },
+    {
+      "name": "first-output-activation",
+      "description": "Shortens time from purchase or trial to a creator's first kept output in a music tech product by auditing install and license friction (OS, plugin formats like VST3, AU, AAX, installers, license managers, DAW rescans), designing the first session, writing a first-output guide, and setting up recipient-verified license handoffs. Use for \"trials aren't converting\", \"people can't get it working\", \"write a quick start\", \"onboard a reviewer\", or \"license delivery\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/first-output-activation/SKILL.md",
+      "sha": "b7424b0c3cd8383ffaae4f6c991e2f803f707f47",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/first-output-activation/SKILL.md"
+    },
+    {
+      "name": "irl-activations",
+      "description": "Plans in-person growth moments for music tech products, including conference side events, producer meetups, listening sessions, in-store or studio demos, and music x endurance experiences like artist-led runs, with a clear goal, a first-output moment on site, follow-up that converts, and honest reporting. Use for \"plan a NAMM or conference activation\", \"host a producer meetup\", \"listening session\", \"run with producers\", or \"is this event worth it\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/irl-activations/SKILL.md",
+      "sha": "41ed143e8a6a8ca48930afd4805ba4cc14b4fec7",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/irl-activations/SKILL.md"
+    },
+    {
+      "name": "music-creator-research",
+      "description": "Researches music creators who buy or use music technology, segmenting producers, beatmakers, artists, mix and mastering engineers, songwriters, educators, and hobbyists by job to be done, DAW, genre, and budget, and mining Reddit, Gearspace, KVR, YouTube comments, Discord, and competitor reviews for exact language and objections, plus a short interview script. Use for \"who is our customer\", \"what do producers say about [competitor]\", \"build personas\", or \"why do people churn\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/music-creator-research/SKILL.md",
+      "sha": "d855f02fd57db425f8d03b1da681d4227012a5af",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/music-creator-research/SKILL.md"
+    },
+    {
+      "name": "music-tech-growth-lead",
+      "description": "Leads growth for a music technology product (plugin, virtual instrument, AI music tool, DAW add-on, music app, or artist platform) by mapping the funnel from discovery to first output to paid to referral, finding the single constraint with real numbers, and routing to the right skill with a 30/60/90-day plan. Use for \"how do we grow this plugin\", \"why aren't trials converting\", \"growth plan for our music app\", or a weekly growth review.",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/music-tech-growth-lead/SKILL.md",
+      "sha": "88b601a0fbf2cde67b96aefd62ab821d7c59c6ba",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/music-tech-growth-lead/SKILL.md"
+    },
+    {
+      "name": "pricing-and-promotions",
+      "description": "Sets and tests pricing for music tech products (perpetual license, subscription, rent-to-own, bundles, free tier, intro pricing, upgrades) and plans a promotion calendar with sale discipline, discount stacking checks against affiliate commission, trial and refund rules, and price-change proposals. Use for \"how should we price this\", \"should we do Black Friday\", \"rent-to-own or subscription\", \"intro price\", or \"are discounts hurting us\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/pricing-and-promotions/SKILL.md",
+      "sha": "8062b0d70dc4c229aed80c1993261407765c37eb",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/pricing-and-promotions/SKILL.md"
+    },
+    {
+      "name": "product-launch",
+      "description": "Plans a music tech product or major update launch, including positioning line, waitlist, private beta with creators, reviewer and partner seeding with tracked states, demo assets, store and directory listings, intro offer, launch-week calendar, press, and the 30-day follow-through. Use for \"launch our plugin\", \"plan the release\", \"beta program\", \"who gets early access\", or \"launch week plan\".",
+      "repo": "nickmerich/music-tech-growth-skills",
+      "path": "skills/product-launch/SKILL.md",
+      "sha": "6e6ef54a584309b3f53d3c5f238f728071b302ca",
+      "url": "https://github.com/nickmerich/music-tech-growth-skills/blob/main/skills/product-launch/SKILL.md"
+    },
+    {
+      "name": "artist-deal-terms",
+      "description": "Structures the artist side of an artist-led athletic event, including role, time ask, compensation model, name and likeness approvals, music use, content rights, brand conflicts and exclusivities, cancellation, and safety responsibilities, then drafts a term sheet for lawyer review. Use for \"what do we offer the artist\", \"draft the artist agreement\", \"how do we split profit\", \"can we use their name and music\", or when an artist's team says yes and you need it in writing.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/artist-deal-terms/SKILL.md",
+      "sha": "a372750813d30628b30a24aa71311b9fc5a1bd8f",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/artist-deal-terms/SKILL.md"
+    },
+    {
+      "name": "artist-fit-and-concept",
+      "description": "Evaluates whether an artist and an athletic event concept belong together before anyone spends money, using eligibility checks and a five-question evidence scorecard with routing rules. Use for \"should we do an event with [artist]\", \"score this artist\", \"which artist should we pitch\", \"is this concept authentic\", or ranking a list of artist prospects. Produces a scored evidence packet and a next stage, never a launch approval.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/artist-fit-and-concept/SKILL.md",
+      "sha": "5ccfddc4e8e53c526cf465e7aa0ce45825652ab8",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/artist-fit-and-concept/SKILL.md"
+    },
+    {
+      "name": "content-capture-and-rights",
+      "description": "Plans photo and video capture for an artist-led athletic event, including shot list, crew, consent, minors, artist approvals, music rights in published video, partner deliverables, and delivery timelines. Use for \"what should we shoot\", \"build the shot list\", \"can we post this video with the song\", \"do we need releases\", or \"what content does the sponsor get\".",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/content-capture-and-rights/SKILL.md",
+      "sha": "510a74834ff5e04b9661cfa57749863e34a67327",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/content-capture-and-rights/SKILL.md"
+    },
+    {
+      "name": "event-budget-pnl",
+      "description": "Builds an artist-led athletic event budget, break-even point, contribution target, and profit split using deterministic math from a CSV, not model estimates. Use for \"what will this cost\", \"build the budget\", \"how many tickets to break even\", \"can partners fund it free\", \"what's the profit split\", or checking whether a plan's numbers add up. Labels every line as quoted, estimated, or committed.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/event-budget-pnl/SKILL.md",
+      "sha": "3f5df13b5c2ad96fa08ee5ab09845732138f962b",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/event-budget-pnl/SKILL.md"
+    },
+    {
+      "name": "event-producer",
+      "description": "Orchestrates end-to-end production of an artist-led athletic event (run, walk, ride, pickup game, carry or pull-up challenge, any sport) from first idea to recap. Use when someone says \"help me produce an event with [artist]\", \"plan a [sport] event\", \"what's next on this event\", or \"are we ready to announce\". Routes to the specialist skills, tracks phase gates, and refuses to skip safety, rights, or money gates. Not for a single caption or one sponsor email; use the specialist skill directly.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/event-producer/SKILL.md",
+      "sha": "a99f8a21f575c47dec60487dc22a684490fabd6d",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/event-producer/SKILL.md"
+    },
+    {
+      "name": "launch-campaign",
+      "description": "Plans and drafts the six-week launch for an artist-led athletic event, leading with the artist's own audience, then the club and local partners, with an asset list, posting calendar, claim rules, and approval gates. Use for \"plan the announcement\", \"write the launch posts\", \"how do we fill this event\", \"draft the artist's announcement\", or \"what goes out each week\". Drafts only; the artist approves anything with their name, and nothing posts without approval.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/launch-campaign/SKILL.md",
+      "sha": "10c7ea85376b61a3389edaaf8c120d40d790fda5",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/launch-campaign/SKILL.md"
+    },
+    {
+      "name": "permits-insurance-and-risk",
+      "description": "Plans permits, venue approval, insurance and certificates of insurance, waivers, music licensing, medical coverage, emergency action plans, and written weather thresholds (lightning, heat, cold, air quality) for artist-led athletic events, and keeps a risk register. Use for \"do we need a permit\", \"what insurance do we need\", \"write the waiver checklist\", \"what's our heat or lightning plan\", \"medical plan\", \"can we play music\", or any go/no-go safety question. Tells you what to ask and who decides; not legal, medical, or insurance advice.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/permits-insurance-and-risk/SKILL.md",
+      "sha": "14043d2498a81aa3cbe816b650cec48d12d14dd0",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/permits-insurance-and-risk/SKILL.md"
+    },
+    {
+      "name": "recap-and-sponsor-report",
+      "description": "Produces the post-event recap, sponsor reports with verified numbers and delivered assets, artist debrief, lessons log, and the 30-day return follow-up for an artist-led athletic event, then sets up renewal and the next event. Use for \"write the recap\", \"send the sponsor report\", \"how did the event do\", \"what did we learn\", or \"ask partners to come back\".",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/recap-and-sponsor-report/SKILL.md",
+      "sha": "fb04417b9777b5c4c52be016853b013e4b87bc6e",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/recap-and-sponsor-report/SKILL.md"
+    },
+    {
+      "name": "registration-and-capacity",
+      "description": "Designs registration for an artist-led athletic event, covering free versus paid entry, numbered tickets, allocation across artist community and club, waitlists, waivers and consent, reminders, check-in, and honest counting from RSVP to attendance to return. Use for \"set up registration\", \"how many spots should we release\", \"what show rate should we plan for\", \"build the check-in flow\", or \"how many people actually came\".",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/registration-and-capacity/SKILL.md",
+      "sha": "b5617a6bdbaf2ec1ca09e0d1f2b453a4ca55d459",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/registration-and-capacity/SKILL.md"
+    },
+    {
+      "name": "run-of-show-and-staffing",
+      "description": "Builds the staffing plan, role cards, volunteer brief, minute-by-minute run of show, communications plan, and load-in and load-out for an artist-led athletic event of any sport. Use for \"how many volunteers do we need\", \"write the run of show\", \"brief the crew\", \"who does what on the day\", or \"make the timeline for event morning\".",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/run-of-show-and-staffing/SKILL.md",
+      "sha": "42d3762bed5e205514f4629f5bc0bb43b039a3e4",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/run-of-show-and-staffing/SKILL.md"
+    },
+    {
+      "name": "sponsor-inventory-and-pricing",
+      "description": "Packages brand partner inventory for an artist-led athletic event (title, presenting, activation, product, content, access, and series deals), prices it from costs and delivered value instead of follower counts, and checks category conflicts with the artist. Use for \"what can we sell sponsors\", \"build sponsor tiers\", \"price this partnership\", \"what should we ask [brand] for\", or turning an event plan into a partner menu.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/sponsor-inventory-and-pricing/SKILL.md",
+      "sha": "901b885d6ddbac25e102a03736d2cb18c873d30c",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/sponsor-inventory-and-pricing/SKILL.md"
+    },
+    {
+      "name": "sponsor-outreach-and-close",
+      "description": "Finds, prioritizes, pitches, follows up, and closes brand partners for an artist-led athletic event, from warm relationships first to cold category outreach, with honest proof, a one-page proposal, and a partner agreement checklist. Use for \"find sponsors for this event\", \"draft the sponsor email\", \"follow up with [brand]\", \"who should we pitch first\", or \"what goes in the partner agreement\". Drafts only; a human approves every send and signature.",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/sponsor-outreach-and-close/SKILL.md",
+      "sha": "258cb7e540c5be4497e1cfca860a07f3402dc00b",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/sponsor-outreach-and-close/SKILL.md"
+    },
+    {
+      "name": "sport-format-design",
+      "description": "Designs the format of an artist-led athletic event for any sport, covering what happens minute to minute, capacity, scaled and adaptive options, scoring, staffing starting points, equipment, venue needs, and the artist moment. Includes references for running, walking and rucking, cycling, basketball, soccer, weighted carries, and pull-ups, plus a template for any new sport. Use for \"what should the event actually be\", \"design a [sport] event\", \"how many people can this hold\", or \"make this work for beginners\".",
+      "repo": "nickmerich/artist-led-events-skills",
+      "path": "skills/sport-format-design/SKILL.md",
+      "sha": "ea296f8e4a082d422bd919d2b2984ab1e1a95aff",
+      "url": "https://github.com/nickmerich/artist-led-events-skills/blob/main/skills/sport-format-design/SKILL.md"
+    }
+  ]
+}
