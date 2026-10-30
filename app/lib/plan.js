@@ -66,6 +66,18 @@ export function parsePlan(markdown, { name } = {}) {
   return { name: skillName, title, description: meta.description || "", intro: intro.join("\n").trim(), tasks, guidance };
 }
 
+// Reject inputs that can't become a sensible plan. Returns a reason or null.
+export const MAX_SOURCE_BYTES = 200_000;
+export function validateSource(text) {
+  if (typeof text !== "string" || !text.trim()) return "the file is empty.";
+  if (Buffer.byteLength(text) > MAX_SOURCE_BYTES) return `the file is larger than ${MAX_SOURCE_BYTES / 1000} KB.`;
+  if (text.includes("\u0000") || /\uFFFD{3,}/.test(text)) return "the file doesn't look like Markdown text.";
+  const fm = text.startsWith("---") && text.indexOf("\n---", 3) === -1;
+  if (fm) return "its front matter opens with `---` but never closes.";
+  if (!parsePlan(text).tasks.length) return "it has no `## ` sections with steps to turn into tasks.";
+  return null;
+}
+
 export function assignWeeks(tasks, weeks) {
   const w = Math.max(1, Math.min(weeks || 4, tasks.length || 1));
   return tasks.map((t, i) => ({ ...t, week: Math.floor((i * w) / tasks.length) + 1 }));
@@ -235,11 +247,26 @@ export async function saveCheckin(api, { repo, trackingIssue, now = new Date() }
   ].join("\n");
   const path = `gryt/checkins/${date}-${slug(name)}.md`;
   let sha;
-  try { sha = (await api("GET", `/repos/${repo}/contents/${path}`))?.sha; } catch (e) { if (e.status !== 404) throw e; }
-  const res = await api("PUT", `/repos/${repo}/contents/${path}`, {
-    message: `GRYT check-in: ${name}`,
-    content: Buffer.from(md).toString("base64"),
-    ...(sha ? { sha } : {}),
-  });
-  return { path, url: res.content?.html_url, done, total: rows.length };
+  try {
+    const cur = await api("GET", `/repos/${repo}/contents/${path}`);
+    sha = cur?.sha;
+    // Replayed close event with nothing new: don't write a duplicate commit.
+    if (cur?.content && Buffer.from(cur.content, "base64").toString("utf8") === md) {
+      return { path, url: cur.html_url, done, total: rows.length, mode: "file", unchanged: true };
+    }
+  } catch (e) { if (e.status !== 404) throw e; }
+  try {
+    const res = await api("PUT", `/repos/${repo}/contents/${path}`, {
+      message: `GRYT check-in: ${name}`,
+      content: Buffer.from(md).toString("base64"),
+      ...(sha ? { sha } : {}),
+    });
+    return { path, url: res.content?.html_url, done, total: rows.length, mode: "file" };
+  } catch (e) {
+    // Read-only installs (no contents:write), or a protected default branch:
+    // keep the check-in by posting it on the tracking issue instead.
+    if (e.status !== 403 && e.status !== 404 && e.status !== 409 && e.status !== 422) throw e;
+    await api("POST", `/repos/${repo}/issues/${trackingIssue.number}/comments`, { body: `${md}\n\nSaved here because I couldn't write \`${path}\` (HTTP ${e.status}).` });
+    return { path: null, url: null, done, total: rows.length, mode: "comment" };
+  }
 }

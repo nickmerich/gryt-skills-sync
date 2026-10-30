@@ -1,0 +1,33 @@
+name: Weekly review
+
+# Opens the 20-minute weekly review issue every Monday at 9:00 ET (13:00 UTC).
+# Uses only the built-in token. Typical run: under 15 seconds.
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  open-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/WEEKLY_REVIEW_ISSUE.md
+          sparse-checkout-cone-mode: false
+      - name: Open this week's review issue (skips if one is already open)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          title="Weekly review $(date -u +%G-W%V)"
+          open=$(gh issue list -R "$REPO" --state open --label weekly-review --json title --jq "map(select(.title == \"$title\")) | length" 2>/dev/null || echo 0)
+          if [ "$open" != "0" ]; then echo "Already open: $title"; exit 0; fi
+          gh label create weekly-review -R "$REPO" --color 0e8a16 --description "20-minute weekly review" 2>/dev/null || true
+          gh issue create -R "$REPO" --title "$title" --label weekly-review --body-file .github/WEEKLY_REVIEW_ISSUE.md

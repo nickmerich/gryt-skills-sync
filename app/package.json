@@ -1,9 +1,18 @@
 {
   "name": "gryt-skills-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "GRYT Skills GitHub App: turn skills and workflows in your repos into GitHub plans.",
-  "engines": { "node": ">=20" },
-  "scripts": { "test": "node --test ../tests/", "plan": "node bin/plan.js" }
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test ../tests/",
+    "lint": "cd .. && node scripts/lint.mjs",
+    "build": "cd .. && node scripts/build-check.mjs",
+    "check": "npm run lint && npm test && npm run build",
+    "plan": "node bin/plan.js",
+    "redeliver": "node bin/redeliver.js"
+  }
 }
