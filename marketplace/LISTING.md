@@ -10,7 +10,7 @@ Status: v0.2.0 staging prerelease. Tested against a private sandbox repo. Not ye
 | Marketplace events | Handle `marketplace_purchase` purchased / changed / cancelled / pending_change / pending_change_cancelled | Done: acknowledged and logged (`app/lib/handler.js`), covered by tests |
 | Webhook security | HMAC SHA-256 signature check | Done (`app/lib/github.js`) |
 | Privacy policy link | Public URL | Page written (`app/public/privacy.html`), live once deployed. Review before submitting |
-| Support link/email | Public URL or email | `/support` page + nick@gryt.club (test message sent 2026-10-29; see docs/SUPPORT_INBOX.md) |
+| Support link/email | Public URL or email | `/support` page + nick@gryt.club (delivery verified 2026-10-30; docs/SUPPORT_INBOX.md) |
 | Publisher contact | Email + website | nick@gryt.club · https://gryt.club |
 | Product availability | Public, not invite-only | Pending: register app as public, deploy |
 | Visuals | Logo, feature card, screenshots | To do: use GRYT logo; screenshots from the sandbox repo |

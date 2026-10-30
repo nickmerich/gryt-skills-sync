@@ -61,7 +61,7 @@ Known limits:
 
 ## Release docs
 
-docs/DEMO.md (one-minute demo) · docs/PILOT.md · docs/DISTRIBUTION.md · docs/WEEKLY_REVIEW.md · docs/CREDIT_PROGRAMS.md · docs/LOCKFILES.md · docs/FEATURE_FLAGS.md
+docs/CHECKLIST_STATUS.md · docs/DEMO.md (one-minute demo) · docs/PILOT.md · docs/DISTRIBUTION.md · docs/WEEKLY_REVIEW.md · docs/CREDIT_PROGRAMS.md · docs/LOCKFILES.md · docs/FEATURE_FLAGS.md
 
 ## Legacy Python sync
 

@@ -1,6 +1,6 @@
 # Feature preview inventory
 
-Account flags are only visible while signed in: profile picture > Feature preview. They can't be read through the API, so fill this in by hand and update it during the weekly review.
+Account flags are only visible while signed in: profile picture > Feature preview. They can't be read through the API. A Comet browser session was attempted on 2026-10-29 and did not connect, so the table below is still empty. Fill it in by hand (2 minutes) and update it during the weekly review.
 
 | Feature | Availability | Enabled? | Relevant to this app? | Feedback URL | Checked |
 |---|---|---|---|---|---|
