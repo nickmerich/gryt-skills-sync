@@ -1,6 +1,6 @@
-# Member benefit schedule request (draft, not sent)
+# Member benefit schedule request (sent)
 
-Send through GitHub Support (support.github.com > Contact > Account and profile, or Developer Program). Save the written reply here.
+Sent 2026-10-30 through GitHub Support as ticket #4927124 (Repositories > Repository features > General question; the closest category on a Free personal account, which doesn't include technical support). From merichnick@gmail.com, CC nick@gryt.club. GitHub's support assistant could not confirm any benefits and routed it to a human. Save the written reply here.
 
 > Subject: Current GitHub Developer Program member benefits
 >
@@ -17,6 +17,6 @@ Send through GitHub Support (support.github.com > Contact > Account and profile,
 
 | Date | Answer | Terms saved |
 |---|---|---|
-| | | |
+| 2026-10-30 | Pending (ticket #4927124 open) | |
 
 Until a written answer exists, treat no legacy perk as an entitlement.
