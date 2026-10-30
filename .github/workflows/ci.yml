@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# Least privilege: CI only reads the repo. No secrets are used.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 20
+      - name: Verify actions lockfile
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh extension install github/gh-actions-lock && gh actions-lock --verify-local
+      - name: Lint
+        working-directory: app
+        run: npm run lint
+      - name: Test (includes malformed input, auth failures, 429/5xx, duplicate webhooks)
+        working-directory: app
+        run: npm test
+      - name: Build check
+        working-directory: app
+        run: npm run build
+      - name: Legacy sync script compiles
+        run: python3 -m py_compile gryt_sync.py

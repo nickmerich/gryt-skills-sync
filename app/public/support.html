@@ -5,5 +5,10 @@
 <ul><li><b>"I can't see any SKILL.md files."</b> Add the repository that holds your library to the installation under GitHub Settings, Applications, GRYT Skills, Configure.</li>
 <li><b>"I couldn't find that skill."</b> The name is the folder that holds <code>SKILL.md</code>, or the file name under <code>workflows/</code>. Run <code>/gryt list</code>.</li>
 <li><b>Running a plan twice.</b> Safe. GRYT keeps existing issues and refreshes the tracking issue.</li>
-<li><b>No check-in after closing.</b> Only the issue titled <code>GRYT plan: ...</code> with the <code>gryt-plan</code> label triggers it.</li></ul>
+<li><b>No check-in after closing.</b> Only the issue titled <code>GRYT plan: ...</code> with the <code>gryt-plan</code> label triggers it.</li><li><strong>"GitHub is rate limiting me."</strong> Wait until the time in the reply and run the same command again. Nothing duplicates.</li>
+<li><strong>"I can't read that skill anymore."</strong> Its repository was removed from the installation. Add it back under Configure.</li>
+<li><strong>"I won't copy it here."</strong> The skill is in a private repo and you ran the command in a public one. Use a private repo.</li>
+<li><strong>"I can't turn that into a plan."</strong> The file needs at least one <code>## </code> section with steps, closed front matter, and under 200 KB.</li>
+<li><strong>Check-in arrived as a comment.</strong> The app couldn't write files in this repo (read-only install or protected branch), so it saved the check-in on the tracking issue instead.</li>
+</ul>
 <footer>GRYT Skills is made by GRYT (<a href="https://gryt.club">gryt.club</a>). Questions: <a href="mailto:nick@gryt.club">nick@gryt.club</a>. Works with GitHub; not affiliated with or endorsed by GitHub.</footer></main></body></html>

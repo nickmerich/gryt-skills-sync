@@ -1,6 +1,6 @@
 # GRYT Skills: GitHub Marketplace listing kit
 
-Status: app built and tested against a private sandbox repo. Not yet registered as a GitHub App, deployed, or submitted.
+Status: v0.2.0 staging prerelease. Tested against a private sandbox repo. Not yet registered as a GitHub App, deployed, or submitted. Distribution decision: stay private until the pilot (docs/DISTRIBUTION.md).
 
 ## Requirement checklist
 
@@ -10,7 +10,7 @@ Status: app built and tested against a private sandbox repo. Not yet registered 
 | Marketplace events | Handle `marketplace_purchase` purchased / changed / cancelled / pending_change / pending_change_cancelled | Done: acknowledged and logged (`app/lib/handler.js`), covered by tests |
 | Webhook security | HMAC SHA-256 signature check | Done (`app/lib/github.js`) |
 | Privacy policy link | Public URL | Page written (`app/public/privacy.html`), live once deployed. Review before submitting |
-| Support link/email | Public URL or email | `/support` page + nick@gryt.club (inbox delivery not yet verified) |
+| Support link/email | Public URL or email | `/support` page + nick@gryt.club (delivery verified 2026-10-30; docs/SUPPORT_INBOX.md) |
 | Publisher contact | Email + website | nick@gryt.club · https://gryt.club |
 | Product availability | Public, not invite-only | Pending: register app as public, deploy |
 | Visuals | Logo, feature card, screenshots | To do: use GRYT logo; screenshots from the sandbox repo |
@@ -57,7 +57,7 @@ URLs (replace host after deploy):
 ## Submit sequence
 
 1. Deploy `app/` (Vercel or any Node 20 host). Set `GITHUB_APP_ID`, `GITHUB_APP_PRIVATE_KEY`, `GITHUB_WEBHOOK_SECRET`.
-2. `node marketplace/register-url.js https://<host>` and open the link; set a webhook secret, create the app, generate a private key, copy the App ID. Put them in the host's env vars and redeploy.
+2. `node marketplace/register-url.js https://<host>` (private by default; add `--public` at step 4) and open the link; set a webhook secret, create the app, generate a private key, copy the App ID. Put them in the host's env vars and redeploy.
 3. Install on `gryt-plan-sandbox` + one library repo; comment `/gryt plan newcomer-welcome`; screenshot the reply, tracking issue and check-in file.
 4. Make the app public (App settings, Advanced).
 5. Marketplace: App settings, "List in Marketplace", paste the copy above, add Free plan, upload logo, feature card and screenshots, accept the Developer Agreement.
