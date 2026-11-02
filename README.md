@@ -23,3 +23,7 @@ python gryt_sync.py push OWNER/REPO path/in/repo local-file --message "..."
 Standard library only, Python 3.9+.
 
 Support: nick@gryt.club · https://gryt.club
+
+## License
+
+MIT. See [LICENSE](LICENSE).
